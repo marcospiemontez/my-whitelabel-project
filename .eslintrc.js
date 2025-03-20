@@ -29,17 +29,17 @@ module.exports = {
 
     // Exige que pontos e vírgulas (;) sejam usados no final de cada declaração.
     // Se uma declaração não terminar com um ponto e vírgula, um erro será emitido.
-    semi: ["error", "always"],
+    "semi": ["error", "always"],
 
     // Define o estilo de citação permitido para strings.
     // Neste caso, é configurado para permitir apenas aspas duplas (double).
     // Se uma string for definida com aspas simples, um erro será emitido.
-    quotes: ["error", "double"],
+    "quotes": ["error", "double"],
 
     // Define o estilo de indentação permitido para o código.
     // Neste caso, é configurado para exigir uma indentação de 2 espaços.
     // A opção { "SwitchCase": 1 } indica que o case dentro de uma instrução switch deve ser indentado em um nível adicional.
-    indent: ["error", 2, { SwitchCase: 1 }],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
 
     // Define a formatação permitida para espaçamento em torno de vírgulas em declarações e objetos.
     // Exige que não haja espaço antes da vírgula e um espaço depois da vírgula.
@@ -59,16 +59,12 @@ module.exports = {
     // Configuração para permitir espaço ao redor das chaves em objetos literais
     "object-curly-spacing": ["error", "always"],
 
-    "vue/html-indent": [
-      "error",
-      2,
-      {
-        attribute: 1,
-        closeBracket: 0,
-        switchCase: 0,
-        ignores: [],
-        baseIndent: 1,
-      },
-    ],
+    "vue/html-indent": ["error", 2, {
+      "attribute": 1,
+      "closeBracket": 0,
+      "switchCase": 0,
+      "ignores": [],
+      "baseIndent": 1,
+    }],
   },
 };
